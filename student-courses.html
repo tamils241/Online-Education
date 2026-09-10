@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IT Technologies - My Courses. View all your enrolled courses.">
+    <title>My Courses | IT Technologies</title>
+    <link rel="icon" type="image/webp" href="images/logo.webp">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- ================= Sidebar ================= -->
+    <aside class="dashboard-sidebar" id="dashboardSidebar">
+        <div class="sidebar-brand">
+            <a href="index.html">
+                <img src="images/logo.webp" alt="IT Technologies Logo">
+            </a>
+        </div>
+
+        <nav class="sidebar-nav">
+            <div class="nav-section-title">Main</div>
+            <a href="student-dashboard.html">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="7" height="9" rx="1"/>
+                    <rect x="14" y="3" width="7" height="5" rx="1"/>
+                    <rect x="14" y="12" width="7" height="9" rx="1"/>
+                    <rect x="3" y="16" width="7" height="5" rx="1"/>
+                </svg>
+                Dashboard
+            </a>
+            <a href="student-courses.html" class="active">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                </svg>
+                My Courses
+            </a>
+            <a href="student-progress.html">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                My Progress
+            </a>
+            <a href="student-certificates.html">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 15a7 7 0 1 0 0-14 7 7 0 0 0 0 14z"/>
+                    <path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12"/>
+                </svg>
+                Certificates
+            </a>
+
+            <div class="nav-section-title">Account</div>
+            <a href="student-messages.html">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                </svg>
+                Messages
+            </a>
+            <a href="student-settings.html">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                </svg>
+                Settings
+            </a>
+            <a href="index.html">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+                    <polyline points="16 17 21 12 16 7"/>
+                    <line x1="21" y1="12" x2="9" y2="12"/>
+                </svg>
+                Back to Site
+            </a>
+        </nav>
+
+        <div class="sidebar-footer">
+            
+            <a href="login.html" style="color: #f87171;">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+                    <polyline points="16 17 21 12 16 7"/>
+                    <line x1="21" y1="12" x2="9" y2="12"/>
+                </svg>
+                Logout
+            </a>
+        </div>
+    </aside>
+
+    <!-- ================= Main Area ================= -->
+    <div class="dashboard-main">
+        <div class="dashboard-topbar">
+            <div style="display: flex; align-items: center; gap: 14px;">
+                <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle sidebar">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <line x1="3" y1="12" x2="21" y2="12"/>
+                        <line x1="3" y1="18" x2="21" y2="18"/>
+                    </svg>
+                </button>
+                <div class="topbar-title">
+                    <h1>My Courses</h1>
+                    <p>All the courses you are enrolled in.</p>
+                </div>
+            </div>
+
+            <div class="topbar-actions">
+                <div class="topbar-search">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"/>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                    </svg>
+                    <input type="text" placeholder="Search courses...">
+                </div>
+                <div class="topbar-user">
+                    <div class="avatar">S</div>
+                    <span>Sarah Johnson</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="dashboard-content">
+
+            <div class="stat-grid">
+                <div class="stat-card">
+                    <div class="stat-icon indigo">
+                        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="stat-label">Enrolled Courses</div>
+                        <div class="stat-value">5</div>
+                        <div class="stat-trend">3 completed</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon green">
+                        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="stat-label">Courses Completed</div>
+                        <div class="stat-value">3</div>
+                        <div class="stat-trend">Congratulations!</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon cyan">
+                        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="stat-label">Average Progress</div>
+                        <div class="stat-value">67%</div>
+                        <div class="stat-trend">+5% this week</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="panel-header">
+                    <h2>In Progress</h2>
+                    <a href="courses.html" class="btn btn-secondary" style="padding: 8px 14px; font-size: 0.85rem;">Browse Courses</a>
+                </div>
+                <div class="panel-body">
+                    <div class="dashboard-course">
+                        <div class="course-thumb">WEB</div>
+                        <div class="course-detail">
+                            <h4>Full Stack Web Development Bootcamp</h4>
+                            <p>48 Lessons Â· Instructor: John Doe</p>
+                        </div>
+                        <div style="width: 160px;">
+                            <div class="progress-track">
+                                <div class="progress-bar" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <a href="404.html" class="btn btn-primary" style="padding: 8px 14px; font-size: 0.85rem;">Continue</a>
+                    </div>
+                    <div class="dashboard-course">
+                        <div class="course-thumb">ML</div>
+                        <div class="course-detail">
+                            <h4>Data Science & Machine Learning</h4>
+                            <p>32 Lessons Â· Instructor: Sarah Kim</p>
+                        </div>
+                        <div style="width: 160px;">
+                            <div class="progress-track">
+                                <div class="progress-bar" data-progress="42"></div>
+                            </div>
+                        </div>
+                        <a href="404.html" class="btn btn-primary" style="padding: 8px 14px; font-size: 0.85rem;">Continue</a>
+                    </div>
+                    <div class="dashboard-course">
+                        <div class="course-thumb">SEC</div>
+                        <div class="course-detail">
+                            <h4>Cybersecurity Fundamentals</h4>
+                            <p>26 Lessons Â· Instructor: Maria Roman</p>
+                        </div>
+                        <div style="width: 160px;">
+                            <div class="progress-track">
+                                <div class="progress-bar" data-progress="20"></div>
+                            </div>
+                        </div>
+                        <a href="404.html" class="btn btn-primary" style="padding: 8px 14px; font-size: 0.85rem;">Continue</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="panel-header">
+                    <h2>Completed</h2>
+                </div>
+                <div class="panel-body">
+                    <div class="dashboard-course">
+                        <div class="course-thumb">UX</div>
+                        <div class="course-detail">
+                            <h4>UI/UX Design Masterclass</h4>
+                            <p>40 Lessons Â· Instructor: Alex Lee</p>
+                        </div>
+                        <div class="progress-track" style="width: 160px;">
+                            <div class="progress-bar" data-progress="100"></div>
+                        </div>
+                        <span class="badge badge-green">Completed</span>
+                    </div>
+                    <div class="dashboard-course">
+                        <div class="course-thumb">RN</div>
+                        <div class="course-detail">
+                            <h4>React Native Mobile Apps</h4>
+                            <p>38 Lessons Â· Instructor: David Park</p>
+                        </div>
+                        <div class="progress-track" style="width: 160px;">
+                            <div class="progress-bar" data-progress="100"></div>
+                        </div>
+                        <span class="badge badge-green">Completed</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
+

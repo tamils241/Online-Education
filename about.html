@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about IT Technologies. Our mission, values, story and the team behind the leading online education platform.">
+    <title>About Us | IT Technologies</title>
+    <link rel="icon" type="image/webp" href="images/logo.webp">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ================= Header / Navigation ================= -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="nav-logo">
+                    <img src="images/logo.webp" alt="IT Technologies Logo">
+                </a>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link active">About</a></li>
+                    <li><a href="courses.html" class="nav-link">Courses</a></li>
+                    <li><a href="instructors.html" class="nav-link">Instructors</a></li>
+                    <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li>
+                        <div class="nav-buttons">
+                            <a href="register.html" class="btn btn-secondary">Register</a>
+                            <a href="login.html" class="btn btn-primary">Login</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= Page Header ================= -->
+    <section class="hero" style="padding: 60px 0;">
+        <video class="hero-video" autoplay muted loop playsinline aria-hidden="true">
+            <source src="video/hero3.mp4" type="video/mp4">
+        </video>
+        <div class="hero-video-overlay"></div>
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 35px;">
+                <h2 style="color: #fff; font-size: 3rem; margin-bottom: 20px;">Empowering Learners Worldwide Since 2018</h2>
+                <p style="color: rgba(255,255,255,0.85); font-size: 1.15rem; max-width: 700px; margin: 0 auto 15px;">
+                    We are on a mission to make world-class education accessible to everyone, everywhere.
+                </p>
+                <p style="color: rgba(255,255,255,0.7); font-size: 1rem; max-width: 700px; margin: 0 auto;">
+                    Whether you are starting your first career or leveling up your skills, we provide the courses, mentors and community you need to succeed.
+                </p>
+            </div>
+
+            <div class="hero-buttons" style="justify-content: center; margin-bottom: 45px;">
+                <a href="courses.html" class="btn btn-accent btn-large">Explore Courses</a>
+                <a href="contact.html" class="btn btn-secondary btn-large" style="border-color: rgba(255,255,255,0.6); color: #fff;">Contact Us</a>
+            </div>
+
+            <div class="hero-stats" style="justify-content: center; margin-top: 0;">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="10000">0</div>
+                    <div class="stat-label">Students</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="250">0</div>
+                    <div class="stat-label">Courses</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="120">0</div>
+                    <div class="stat-label">Instructors</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="40">0</div>
+                    <div class="stat-label">Countries</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= Our Story ================= -->
+    <section class="features" style="background: var(--bg-white);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Story</h2>
+                <p>From a small team of educators to a global learning platform trusted by thousands.</p>
+            </div>
+
+            <div class="split-grid">
+                <div>
+                    <h3 style="font-size: 1.6rem; color: var(--text-dark); margin-bottom: 20px;">From Humble Beginnings to Global Impact</h3>
+                    <p style="color: var(--text-light); font-size: 1.1rem; line-height: 1.8; margin-bottom: 15px;">
+                        IT Technologies was founded in 2018 with a simple belief: that anyone, regardless of background or location, deserves access to high-quality technology education. What started as a handful of recorded coding tutorials has grown into a platform with 250+ courses, expert instructors from around the world, and a community of more than 10,000 learners.
+                    </p>
+                    <p style="color: var(--text-light); font-size: 1.1rem; line-height: 1.8;">
+                        Today we partner with leading companies and industry professionals to deliver practical, project-based learning that prepares students for real careers in web development, data science, design, cybersecurity and beyond.
+                    </p>
+                </div>
+                <div class="split-image">
+                    <img src="images/about-story.webp" alt="Students collaborating in a classroom at IT Technologies">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= Mission & Values ================= -->
+    <section class="courses" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Mission & Values</h2>
+                <p>The principles that guide everything we do.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M2 12h20"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                    </div>
+                    <h3>Accessibility</h3>
+                    <p>Quality education should not be a privilege. We keep learning affordable and flexible for everyone.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #f59e0b, #f97316);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                        </svg>
+                    </div>
+                    <h3>Excellence</h3>
+                    <p>Every course is designed and reviewed by industry experts to ensure real, measurable skill growth.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #10b981, #059669);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3>Community</h3>
+                    <p>Learning is better together. We foster supportive communities of learners and mentors worldwide.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #06b6d4, #0891b2);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 18h6"/>
+                            <path d="M10 22h4"/>
+                            <path d="M12 2a7 7 0 0 0-4 12.7.83.83 0 0 1 .4.66V17h7v-1.64a.83.83 0 0 1 .4-.66A7 7 0 0 0 12 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Innovation</h3>
+                    <p>We constantly update our content and tools to keep pace with the rapidly changing tech landscape.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= Stats ================= -->
+    <section class="testimonials" style="padding: 60px 0;">
+        <div class="container">
+            <div class="hero-stats" style="justify-content: center; margin-top: 0;">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="10000">0</div>
+                    <div class="stat-label">Students</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="250">0</div>
+                    <div class="stat-label">Courses</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="120">0</div>
+                    <div class="stat-label">Instructors</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="40">0</div>
+                    <div class="stat-label">Countries</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= Why Learn With Us ================= -->
+    <section class="courses">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Learn With Us?</h2>
+                <p>Hands-on projects, expert guidance and a roadmap built for your career.</p>
+            </div>
+
+            <div class="courses-grid">
+                <div class="feature-card">
+                    <h3>Project-Based Learning</h3>
+                    <p>Apply what you learn through real-world projects that build a professional portfolio.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Certificates That Matter</h3>
+                    <p>Earn verified certificates recognised by leading employers and tech companies.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Career Support</h3>
+                    <p>Get resume reviews, interview prep and job referrals through our hiring network.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= Leadership Team ================= -->
+    <section class="instructors" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Leadership</h2>
+                <p>Meet the people driving our mission forward.</p>
+            </div>
+
+            <div class="instructors-grid">
+                <div class="instructor-card">
+                    <div class="instructor-avatar" style="background: linear-gradient(135deg, #4f46e5, #06b6d4);">AR</div>
+                    <h3>Alex Rodriguez</h3>
+                    <div class="specialty">Founder & CEO</div>
+                    <p class="bio">Former edtech executive with a passion for making learning accessible to everyone.</p>
+                </div>
+
+                <div class="instructor-card">
+                    <div class="instructor-avatar" style="background: linear-gradient(135deg, #10b981, #059669);">PM</div>
+                    <h3>Priya Malhotra</h3>
+                    <div class="specialty">Chief Learning Officer</div>
+                    <p class="bio">Curriculum strategist who has designed learning programs used by millions of students.</p>
+                </div>
+
+                <div class="instructor-card">
+                    <div class="instructor-avatar" style="background: linear-gradient(135deg, #f59e0b, #d97706);">JB</div>
+                    <h3>James Brooks</h3>
+                    <div class="specialty">CTO</div>
+                    <p class="bio">Platform architect focused on building a fast, reliable and delightful learning experience.</p>
+                </div>
+
+                <div class="instructor-card">
+                    <div class="instructor-avatar" style="background: linear-gradient(135deg, #ec4899, #be185d);">SW</div>
+                    <h3>Sofia Williams</h3>
+                    <div class="specialty">VP of Community</div>
+                    <p class="bio">Community builder growing supportive learning networks across 40+ countries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-box">
+                <h2>Become Part of Our Story</h2>
+                <p>Join thousands of learners who have transformed their careers with IT Technologies. Start learning today.</p>
+                <div class="cta-buttons">
+                    <a href="register.html" class="btn btn-accent btn-large">Get Started Free</a>
+                    <a href="courses.html" class="btn btn-secondary btn-large" style="border-color: #fff; color: #fff;">Explore Courses</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= Footer ================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <img src="images/logo-white.webp" alt="IT Technologies Logo">
+                    </a>
+                    <p>Empowering learners worldwide with accessible, high-quality education from industry experts.</p>
+                    <div class="footer-social">
+                        <a href="404.html" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                        <a href="404.html" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                        </a>
+                        <a href="404.html" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        </a>
+                        <a href="404.html" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="instructors.html">Instructors</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+
+
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="404.html">Help Center</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                         <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="404.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Courses</h4>
+                    <ul>
+                        <li><a href="courses.html">Web Development</a></li>
+                        <li><a href="courses.html">Data Science</a></li>
+                        <li><a href="courses.html">UI/UX Design</a></li>
+                        <li><a href="courses.html">Cybersecurity</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            123 Learning Street, Tech City
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            +1 (800) 555-0134
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            support@ittech.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; 2026 IT Technologies. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

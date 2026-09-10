@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IT Technologies - Online Education Platform. Learn from industry experts with flexible online courses.">
+    <title>IT Technologies | Online Education Platform</title>
+    <link rel="icon" type="image/webp" href="images/logo.webp">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ================= Header / Navigation ================= -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="nav-logo">
+                    <img src="images/logo.webp" alt="IT Technologies Logo">
+                </a>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="courses.html" class="nav-link">Courses</a></li>
+                    <li><a href="instructors.html" class="nav-link">Instructors</a></li>
+                    <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li>
+                        <div class="nav-buttons">
+                            <a href="register.html" class="btn btn-secondary">Register</a>
+                            <a href="login.html" class="btn btn-primary">Login</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= Hero Section ================= -->
+    <section class="hero">
+        <video class="hero-video" autoplay muted loop playsinline aria-hidden="true">
+            <source src="video/hero2.mp4" type="video/mp4">
+        </video>
+        <div class="hero-video-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="animate-fadeInUp">Learn <span>Anything</span>, Anywhere, Anytime With IT Technologies</h1>
+                    <p class="animate-fadeInUp">Transform your career with world-class online courses taught by industry experts across software development, data science, design, and more.</p>
+                    <div class="hero-buttons animate-fadeInUp">
+                        <a href="register.html" class="btn btn-accent btn-large">Get Started Free</a>
+                        <a href="courses.html" class="btn btn-secondary btn-large" style="border-color: rgba(255,255,255,0.6); color: #fff;">Explore Courses</a>
+                    </div>
+                    <div class="hero-stats animate-fadeInUp">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="10000">0</div>
+                            <div class="stat-label">Students</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="250">0</div>
+                            <div class="stat-label">Courses</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="120">0</div>
+                            <div class="stat-label">Instructors</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image animate-float">
+                    <div class="hero-image-placeholder">
+                        <img src="images/hero.webp" alt="IT Technologies learning platform illustration">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= Partners Strip ================= -->
+    <section class="partners">
+        <div class="container">
+            <div class="partners-row">
+                <span class="partners-text">Trusted by teams at</span>
+                <div class="partner-logo">TechNova</div>
+                <div class="partner-logo">DataCore</div>
+                <div class="partner-logo">Cloudnine</div>
+                <div class="partner-logo">DesignHub</div>
+                <div class="partner-logo">ByteWorks</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= Features Section ================= -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose IT Technologies?</h2>
+                <p>We provide the best online learning experience with expert guidance and flexible schedules.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <h3>Flexible Learning</h3>
+                    <p>Study at your own pace with lifetime access to all course materials.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                    </div>
+                    <h3>Expert Instructors</h3>
+                    <p>Learn directly from industry professionals with real-world experience.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M23 7l-7 5 7 5V7z"/>
+                            <rect x="1" y="5" width="15" height="14" rx="2"/>
+                        </svg>
+                    </div>
+                    <h3>Interactive Videos</h3>
+                    <p>High-quality video lessons with quizzes, coding exercises and projects.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                            <line x1="12" y1="17" x2="12.01" y2="17"/>
+                        </svg>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Get help anytime with round-the-clock support from our dedicated team.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= Courses Section ================= -->
+    <section class="courses" id="courses">
+        <div class="container">
+            <div class="section-header">
+                <h2>Popular Courses</h2>
+                <p>Hand-picked courses by our experts to boost your skills quickly.</p>
+            </div>
+
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="images/courses/web-dev.webp" alt="Full Stack Web Development Bootcamp">
+                        <span class="course-badge">Popular</span>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">WEB DEVELOPMENT</div>
+                        <h3>Full Stack Web Development Bootcamp</h3>
+                        <p>Master HTML, CSS, JavaScript, React, Node.js and databases from scratch.</p>
+                        <div class="course-meta">
+                            <div class="course-info">
+                                <span>48 Lessons</span>
+                                <span>4.9 rating</span>
+                            </div>
+                            <div class="course-price">$99</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="images/courses/data-science.webp" alt="Data Science and Machine Learning">
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">DATA SCIENCE</div>
+                        <h3>Data Science & Machine Learning</h3>
+                        <p>Python, NumPy, Pandas, and Machine Learning algorithms explained simply.</p>
+                        <div class="course-meta">
+                            <div class="course-info">
+                                <span>32 Lessons</span>
+                                <span>4.8 rating</span>
+                            </div>
+                            <div class="course-price">$119</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="images/courses/uiux-design.webp" alt="UI/UX Design Masterclass">
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">DESIGN</div>
+                        <h3>UI/UX Design Masterclass</h3>
+                        <p>Design beautiful interfaces with Figma, design systems and user research.</p>
+                        <div class="course-meta">
+                            <div class="course-info">
+                                <span>40 Lessons</span>
+                                <span>4.7 rating</span>
+                            </div>
+                            <div class="course-price">$89</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="images/courses/cybersecurity.webp" alt="Cybersecurity Fundamentals">
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">CYBERSECURITY</div>
+                        <h3>Cybersecurity Fundamentals</h3>
+                        <p>Network security, encryption, and ethical hacking concepts from the ground up.</p>
+                        <div class="course-meta">
+                            <div class="course-info">
+                                <span>26 Lessons</span>
+                                <span>4.8 rating</span>
+                            </div>
+                            <div class="course-price">$109</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="images/courses/mobile-dev.webp" alt="React Native Mobile Apps">
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">MOBILE DEVELOPMENT</div>
+                        <h3>React Native Mobile Apps</h3>
+                        <p>Build iOS and Android apps with one codebase using React Native.</p>
+                        <div class="course-meta">
+                            <div class="course-info">
+                                <span>38 Lessons</span>
+                                <span>4.7 rating</span>
+                            </div>
+                            <div class="course-price">$95</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="images/courses/marketing.webp" alt="Digital Marketing Essential">
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">BUSINESS</div>
+                        <h3>Digital Marketing Essential</h3>
+                        <p>SEO, social media, and paid ads to grow any business online.</p>
+                        <div class="course-meta">
+                            <div class="course-info">
+                                <span>30 Lessons</span>
+                                <span>4.6 rating</span>
+                            </div>
+                            <div class="course-price">$79</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= Instructors Section ================= -->
+    <section class="instructors" id="instructors">
+        <div class="container">
+            <div class="section-header">
+                <h2>Meet Our Expert Instructors</h2>
+                <p>Learn from professionals who work at top companies around the world.</p>
+            </div>
+
+            <div class="instructors-grid">
+                <div class="instructor-card">
+                    <div class="instructor-avatar">JS</div>
+                    <h3>John Smith</h3>
+                    <div class="specialty">Senior Software Engineer</div>
+                    <p class="bio">10+ years building scalable web applications at Fortune 500 companies.</p>
+                </div>
+
+                <div class="instructor-card">
+                    <div class="instructor-avatar">SL</div>
+                    <h3>Sarah Lee</h3>
+                    <div class="specialty">Data Science Lead</div>
+                    <p class="bio">Former Google data scientist with a passion for ML and analytics.</p>
+                </div>
+
+                <div class="instructor-card">
+                    <div class="instructor-avatar">MC</div>
+                    <h3>Michael Chen</h3>
+                    <div class="specialty">UI/UX Design Director</div>
+                    <p class="bio">Award-winning designer who has shipped products for global brands.</p>
+                </div>
+
+                <div class="instructor-card">
+                    <div class="instructor-avatar">EP</div>
+                    <h3>Emily Parker</h3>
+                    <div class="specialty">Cybersecurity Expert</div>
+                    <p class="bio">Certified security professional with 8+ years in cloud security.</p>
+                </div>
+
+                <div class="instructor-card">
+                    <div class="instructor-avatar">RW</div>
+                    <h3>Robert Williams</h3>
+                    <div class="specialty">Mobile Engineer</div>
+                    <p class="bio">React Native specialist who has shipped apps with millions of downloads.</p>
+                </div>
+
+                <div class="instructor-card">
+                    <div class="instructor-avatar">JG</div>
+                    <h3>Jessica Gomez</h3>
+                    <div class="specialty">Marketing Strategist</div>
+                    <p class="bio">Growth marketer focused on SEO, paid ads and conversion optimization.</p>
+                </div>
+
+                <div class="instructor-card">
+                    <div class="instructor-avatar">DK</div>
+                    <h3>David Kim</h3>
+                    <div class="specialty">Cloud Architect</div>
+                    <p class="bio">AWS and Azure certified architect experienced in large-scale systems.</p>
+                </div>
+
+                <div class="instructor-card">
+                    <div class="instructor-avatar">NT</div>
+                    <h3>Nina Thomas</h3>
+                    <div class="specialty">Data Analyst</div>
+                    <p class="bio">Business intelligence expert turning complex data into clear insights.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= Testimonials Section ================= -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Students Say</h2>
+                <p>Join thousands of happy learners who transformed their careers.</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>"The Full Stack Development course completely changed my career. I went from a beginner to a working developer in just 6 months!"</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">AB</div>
+                        <div class="testimonial-info">
+                            <h4>Alex Brown</h4>
+                            <span>Frontend Developer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>"The instructors are amazing and truly care about your progress. Best online learning platform I have ever used."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">RJ</div>
+                        <div class="testimonial-info">
+                            <h4>Rachel Johnson</h4>
+                            <span>Data Analyst</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>"Flexible scheduling and practical projects made it easy to learn while working full-time. Highly recommended!"</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">DT</div>
+                        <div class="testimonial-info">
+                            <h4>David Thompson</h4>
+                            <span>UX Designer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>"The Cybersecurity course was packed with real-world labs. I landed a security analyst role three months after finishing."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">SW</div>
+                        <div class="testimonial-info">
+                            <h4>Sarah White</h4>
+                            <span>Security Analyst</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>"I switched into data science from marketing. The structured learning paths and mentors made all the difference."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">MK</div>
+                        <div class="testimonial-info">
+                            <h4>Mohammed Khan</h4>
+                            <span>Data Scientist</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>"Building my first React Native app with the guidance of the community here was fun and incredibly fast."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">LG</div>
+                        <div class="testimonial-info">
+                            <h4>Laura Green</h4>
+                            <span>Mobile Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= Pricing Section ================= -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Choose Your Plan</h2>
+                <p>Simple, transparent pricing that grows with you. Cancel anytime.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3 class="pricing-name">Starter</h3>
+                    <div class="pricing-price">$19<span>/month</span></div>
+                    <p class="pricing-desc">Perfect for curious beginners getting started with online learning.</p>
+                    <ul class="pricing-features">
+                        <li>Access to 50+ courses</li>
+                        <li>Community forum access</li>
+                        <li>Certificate of completion</li>
+                        <li>Standard support</li>
+                    </ul>
+                    <a href="register.html" class="btn btn-secondary pricing-btn">Get Started</a>
+                </div>
+
+                <div class="pricing-card pricing-featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <h3 class="pricing-name">Professional</h3>
+                    <div class="pricing-price">$49<span>/month</span></div>
+                    <p class="pricing-desc">For serious learners who want to master in-demand skills and projects.</p>
+                    <ul class="pricing-features">
+                        <li>Access to all 250+ courses</li>
+                        <li>Hands-on projects & labs</li>
+                        <li>Priority mentor support</li>
+                        <li>Verified certificates</li>
+                        <li>Offline downloads</li>
+                    </ul>
+                    <a href="register.html" class="btn btn-accent pricing-btn">Get Started</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3 class="pricing-name">Enterprise</h3>
+                    <div class="pricing-price">$99<span>/month</span></div>
+                    <p class="pricing-desc">Teams and organizations that need robust training and analytics.</p>
+                    <ul class="pricing-features">
+                        <li>Everything in Professional</li>
+                        <li>Team dashboards & reports</li>
+                        <li>Custom learning paths</li>
+                        <li>Dedicated account manager</li>
+                        <li>SSO & API access</li>
+                    </ul>
+                    <a href="register.html" class="btn btn-secondary pricing-btn">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FAQ Section ================= -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know before you start learning with us.</p>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" type="button">
+                        <span>Do I get lifetime access to the courses?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. Once you enroll, you get lifetime access to the course content and all future updates — no recurring fees to keep your materials.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" type="button">
+                        <span>Can I get a certificate after completing a course?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Every course includes a certificate of completion. Professional and Enterprise plans also include verified certificates that you can share on LinkedIn or your resume.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" type="button">
+                        <span>What if I am not satisfied with a course?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer a 30-day money-back guarantee. If a course doesn't meet your expectations, contact support and we will refund you in full — no questions asked.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" type="button">
+                        <span>Are courses self-paced or do they follow a schedule?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>All courses are self-paced. You can study on your own schedule, revisit lessons as often as you like, and learn at whatever speed works best for you.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" type="button">
+                        <span>Can I get help from instructors when I am stuck?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. You can post questions in the community forum or reach out to your mentor directly. Our team responds within 24 hours on weekdays.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= Blog/News Section ================= -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest From Our Blog</h2>
+                <p>Insights, tips and tutorials from our instructors and industry experts.</p>
+            </div>
+
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog/blog-js.webp" alt="Code editor illustration">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>Web Development</span>
+                            <span>5 min read</span>
+                        </div>
+                        <h3>10 JavaScript Tips to Write Cleaner Code</h3>
+                        <p>Practical patterns and habits that will make your frontend code easier to read and maintain.</p>
+                        <a href="404.html" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog/blog-ml.webp" alt="Laptop illustration">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>Data Science</span>
+                            <span>7 min read</span>
+                        </div>
+                        <h3>A Beginner's Roadmap to Machine Learning in 2026</h3>
+                        <p>Where to start, what to learn first, and which projects showcase your skills to employers.</p>
+                        <a href="404.html" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog/blog-design.webp" alt="Heart illustration">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>Design</span>
+                            <span>4 min read</span>
+                        </div>
+                        <h3>Design Systems 101: Lessons from Real Projects</h3>
+                        <p>How consistent components and tokens help teams ship better products, faster.</p>
+                        <a href="404.html" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog/blog-security.webp" alt="Shield illustration">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>Cybersecurity</span>
+                            <span>6 min read</span>
+                        </div>
+                        <h3>Essential Cybersecurity Habits for Developers</h3>
+                        <p>Simple security practices that protect your apps, your data and your users.</p>
+                        <a href="404.html" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog/blog-mobile.webp" alt="Smartphone illustration">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>Mobile Development</span>
+                            <span>8 min read</span>
+                        </div>
+                        <h3>React Native vs Flutter: Which Should You Choose?</h3>
+                        <p>An honest comparison of the two most popular cross-platform frameworks.</p>
+                        <a href="404.html" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog/blog-marketing.webp" alt="Growth chart illustration">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>Business</span>
+                            <span>5 min read</span>
+                        </div>
+                        <h3>How to Market an Online Course That Stands Out</h3>
+                        <p>Proven strategies to build an audience and launch your course with impact.</p>
+                        <a href="404.html" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CTA Section ================= -->
+    <section class="cta" id="contact">
+        <div class="container">
+            <div class="cta-box">
+                <h2>Ready to Start Learning?</h2>
+                <p>Create your free account today and get access to thousands of courses, premium content and personalized learning paths.</p>
+                <div class="cta-buttons">
+                    <a href="register.html" class="btn btn-accent btn-large">Create Free Account</a>
+                    <a href="#courses" class="btn btn-secondary btn-large" style="border-color: #fff; color: #fff;">Browse Courses</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= Footer ================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <img src="images/logo-white.webp" alt="IT Technologies Logo">
+                    </a>
+                    <p>Empowering learners worldwide with accessible, high-quality education from industry experts.</p>
+                    <div class="footer-social">
+                        <a href="404.html" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="404.html" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                            </svg>
+                        </a>
+                        <a href="404.html" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="404.html" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="instructors.html">Instructors</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        
+                       
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="404.html">Help Center</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                         <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="404.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Courses</h4>
+                    <ul>
+                        <li><a href="courses.html">Web Development</a></li>
+                        <li><a href="courses.html">Data Science</a></li>
+                        <li><a href="courses.html">UI/UX Design</a></li>
+                        <li><a href="courses.html">Cybersecurity</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            123 Learning Street, Tech City
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            +1 (800) 555-0134
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            support@ittech.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; 2026 IT Technologies. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
