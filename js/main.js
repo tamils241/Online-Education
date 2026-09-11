@@ -387,8 +387,8 @@ function initForms() {
             }
             clearFormError('regEmail');
 
-            if (password.length < 8) {
-                showFormError('regPassword', 'Password must be at least 8 characters.');
+            if (!isStrongPassword(password)) {
+                showFormError('regPassword', 'Password must be at least 8 characters with uppercase, lowercase, number and a special character.');
                 return;
             }
             clearFormError('regPassword');
@@ -400,26 +400,71 @@ function initForms() {
             clearFormError('confirmPassword');
 
             if (!terms.checked) {
+                alert('You must agree to the Terms & Conditions.');
                 showFormError('terms', 'You must agree to the Terms & Conditions.');
                 return;
             }
             clearFormError('terms');
 
             // Simulated registration success
-            simulateAuth('Creating account', 'Account created! Redirecting to ' + role + ' dashboard...', role === 'admin' ? 'admin-dashboard.html' : 'student-dashboard.html');
+            simulateAuth('Creating account', 'Account created! Please login to continue.', 'login.html');
             registerForm.reset();
         });
     }
+
+    /* ---------- Register email: live format validation ---------- */
+    const regEmailInput = document.getElementById('regEmail');
+    if (regEmailInput) {
+        regEmailInput.addEventListener('input', function () {
+            const value = regEmailInput.value.trim();
+            if (value && !isValidEmail(value)) {
+                showFormError('regEmail', 'Please enter a valid email address.');
+            } else {
+                clearFormError('regEmail');
+            }
+        });
+    }
+
+    /* ---------- Register password: strength + match validation ---------- */
+    const regPasswordInput = document.getElementById('regPassword');
+    const confirmPasswordInput = document.getElementById('confirmPassword');
+    if (regPasswordInput) {
+        regPasswordInput.addEventListener('input', function () {
+            const value = regPasswordInput.value;
+            if (value && !isStrongPassword(value)) {
+                showFormError('regPassword', 'Need 8+ chars: uppercase, lowercase, number and a special character.');
+            } else {
+                clearFormError('regPassword');
+            }
+            if (confirmPasswordInput && confirmPasswordInput.value) {
+                if (confirmPasswordInput.value !== value) {
+                    showFormError('confirmPassword', 'Passwords do not match.');
+                } else {
+                    clearFormError('confirmPassword');
+                }
+            }
+        });
+    }
+    if (confirmPasswordInput) {
+        confirmPasswordInput.addEventListener('input', function () {
+            const value = confirmPasswordInput.value;
+            if (value && value !== regPasswordInput.value) {
+                showFormError('confirmPassword', 'Passwords do not match.');
+            } else {
+                clearFormError('confirmPassword');
+            }
+        });
+    }
 /* ---------- Name fields: letters only ---------- */
-    const nameInputs = document.querySelectorAll('input[name="firstName"], input[name="lastName"]');
+    const nameInputs = document.querySelectorAll('input[name="firstName"], input[name="lastName"], #fullName');
     nameInputs.forEach(function (input) {
         input.addEventListener('keydown', function (e) {
-            if (e.key.length === 1 && !/[A-Za-z\u00C0-\u024F]/.test(e.key) && !e.ctrlKey && !e.metaKey) {
+            if (e.key.length === 1 && !/[A-Za-z]/.test(e.key) && !e.ctrlKey && !e.metaKey) {
                 e.preventDefault();
             }
         });
         input.addEventListener('input', function () {
-            input.value = input.value.replace(/[^A-Za-z\u00C0-\u024F]/g, '');
+            input.value = input.value.replace(/[^A-Za-z]/g, '').slice(0, 16);
         });
     });
 
@@ -511,6 +556,12 @@ function isValidEmail(email) {
     return regex.test(email);
 }
 
+/* ---------- Strong password helper ---------- */
+function isStrongPassword(password) {
+    const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{8,}$/;
+    return regex.test(password);
+}
+
 /* ---------- Show inline form error ---------- */
 function showFormError(fieldId, message) {
     const field = document.getElementById(fieldId);
@@ -583,12 +634,10 @@ function simulateAuth(loadingMsg, successMsg, redirect) {
 
 /* ---------- Social login placeholder ---------- */
 function socialLogin(provider) {
-    alert('Signing in with ' + provider + '... (Demo only)');
 }
 
 /* ---------- Social register placeholder ---------- */
 function socialRegister(provider) {
-    alert('Creating account with ' + provider + '... (Demo only)');
 }
 
 /* ---------- Password visibility toggle ---------- */
